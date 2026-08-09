@@ -1,0 +1,6 @@
+
+package com.teamtalkhu.app;
+
+public enum CmdComplete {
+    CMD_COMPLETE_NONE, CMD_COMPLETE_LOGIN, CMD_COMPLETE_JOIN, CMD_COMPLETE_TEXTMSG, CMD_COMPLETE_UNSUBSCRIBE
+}

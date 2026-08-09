@@ -1,0 +1,110 @@
+
+package com.teamtalkhu.app.data;
+
+import java.util.Vector;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+public class MapAdapter extends BaseAdapter {
+
+    Vector<String> keys = new Vector<>();
+    Vector<Integer> values = new Vector<>();
+
+    LayoutInflater inflater;
+    int layout_item, text_id;
+
+    public MapAdapter(Context context, int layout_item, int text_id) {
+        inflater = LayoutInflater.from(context);
+        this.layout_item = layout_item;
+        this.text_id = text_id;
+    }
+
+    public MapAdapter(Context context) {
+        this(context, android.R.layout.simple_spinner_item, android.R.id.text1);
+    }
+
+    public void addPair(String key, int value) {
+        keys.add(key);
+        values.add(value);
+    }
+
+    public int getIndex(int value, int invalid_index) {
+        for(int i=0;i<values.size();i++) {
+            if(values.get(i) == value)
+                return i;
+        }
+        return invalid_index;
+    }
+
+    public int getValue(int position, int invalid_value) {
+        if(position >= 0 && position < values.size())
+            return values.get(position);
+        return invalid_value;
+    }
+    public int getValue(String key, int invalid_value) {
+        for(int i=0;i<keys.size();i++)
+            if(keys.get(i).equals(key))
+                return values.get(i);
+        return invalid_value;
+    }
+
+    @Override
+    public int getCount() {
+        return keys.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return values.get(position);
+    }
+
+    @Override
+    public long getItemId(int arg0) {
+        return arg0;
+    }
+
+    @Override
+    public View getView(int pos, View convertView, ViewGroup parent) {
+        if(convertView == null)
+            convertView = inflater.inflate(layout_item, parent, false);
+
+        TextView text;
+        if (convertView instanceof TextView) {
+            text = (TextView) convertView;
+        } else {
+            text = convertView.findViewById(text_id);
+        }
+        
+        if (text != null) {
+            text.setText(keys.get(pos));
+        }
+
+        return convertView;
+    }
+
+    @Override
+    public View getDropDownView(int position, View convertView, ViewGroup parent) {
+        if (convertView == null) {
+            // Use standard dropdown layout for accessibility (CheckedTextView)
+            convertView = inflater.inflate(android.R.layout.simple_spinner_dropdown_item, parent, false);
+        }
+
+        TextView text;
+        if (convertView instanceof TextView) {
+            text = (TextView) convertView;
+        } else {
+            text = convertView.findViewById(android.R.id.text1);
+        }
+
+        if (text != null) {
+            text.setText(keys.get(position));
+        }
+
+        return convertView;
+    }
+}

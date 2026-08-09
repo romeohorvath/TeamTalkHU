@@ -1,0 +1,30 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <header
+        android:fragment="com.teamtalkhu.app.PreferencesActivity$GeneralPreferenceFragment"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:fragment="com.teamtalkhu.app.PreferencesActivity$DisplayPreferenceFragment"
+        android:title="@string/pref_header_display" />
+
+    <header
+        android:fragment="com.teamtalkhu.app.PreferencesActivity$SoundEventsPreferenceFragment"
+        android:title="@string/pref_title_audio_icons" />
+    <header
+        android:fragment="com.teamtalkhu.app.PreferencesActivity$TtsPreferenceFragment"
+        android:title="@string/pref_header_tts" />
+    <header
+        android:fragment="com.teamtalkhu.app.PreferencesActivity$ServerListPreferenceFragment"
+        android:title="@string/pref_header_serverlist" />
+    <header
+        android:fragment="com.teamtalkhu.app.PreferencesActivity$ConnectionPreferenceFragment"
+        android:title="@string/pref_header_connection" />
+    <header
+        android:fragment="com.teamtalkhu.app.PreferencesActivity$SoundSystemPreferenceFragment"
+        android:title="@string/pref_header_soundsystem" />
+    <header
+        android:fragment="com.teamtalkhu.app.PreferencesActivity$AboutPreferenceFragment"
+        android:title="@string/pref_cat_about" />
+
+</preference-headers>

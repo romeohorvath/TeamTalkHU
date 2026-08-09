@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="title_import_server">Szerver importálása</string>
+    <string name="msg_import_server_confirmation">Importálod a következő szervert: %1$s?</string>
+    <string name="action_import">Importálás</string>
+    <string name="action_import_connect">Importálás és csatlakozás</string>
+    <string name="msg_server_imported">A szerverek sikeresen importálva</string>
+    <string name="err_file_read">Hiba a fájl olvasásakor</string>
+    <string name="title_select_server">Megnyitandó szerver kiválasztása</string>
+    <string name="title_export_servers">Szerverek exportálása</string>
+    <string name="msg_choose_export_method">Az összes szervert exportálod, vagy csak bizonyosakat választasz?</string>
+    <string name="action_export_all">Összes exportálása</string>
+    <string name="action_choose_servers">Kiválasztás</string>
+    <string name="msg_no_servers_selected">Nincs kijelölt szerver.</string>
+    <string name="msg_import_multiple_servers_confirmation">Importálod ezt a(z) %1$d szervert?</string>
+
+</resources>

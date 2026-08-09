@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_entries">
+        <item>System Default</item>
+        <item>English</item>
+        <item>Portuguese (European/African)</item>
+        <item>Portuguese (Brazil)</item>
+        <item>Indonesian</item>
+        <item>Bulgarian</item>
+        <item>Spanish (Latin America)</item>
+        <item>Spanish (Spain/Europe)</item>
+        <item>Arabic (Iraq)</item>
+        <item>Arabic (Standard)</item>
+        <item>Russian</item>
+        <item>Polish</item>
+        <item>Persian (Farsi)</item>
+        <item>Chinese (Simplified)</item>
+        <item>Chinese (Traditional)</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>default</item>
+        <item>en</item>
+        <item>pt-PT</item>
+        <item>pt-BR</item>
+        <item>in</item>
+        <item>bg</item>
+        <item>es</item>
+        <item>es-ES</item>
+        <item>ar-IQ</item>
+        <item>ar</item>
+        <item>ru</item>
+        <item>pl</item>
+        <item>fa</item>
+        <item>zh-CN</item>
+        <item>zh-TW</item>
+    </string-array>
+
+    <string-array name="channel_sort_entries">
+        <item>@string/sort_default</item>
+        <item>@string/sort_za</item>
+        <item>@string/sort_popularity</item>
+    </string-array>
+    <string-array name="channel_sort_values">
+        <item>0</item> <!-- Default A-Z -->
+        <item>1</item> <!-- Z-A -->
+        <item>2</item> <!-- Popularity -->
+    </string-array>
+    <string-array name="font_scale_entries">
+        <item>@string/font_scale_small</item>
+        <item>@string/font_scale_normal</item>
+        <item>@string/font_scale_large</item>
+        <item>@string/font_scale_xlarge</item>
+    </string-array>
+    <string-array name="font_scale_values">
+        <item>0.85</item>
+        <item>1.0</item>
+        <item>1.15</item>
+        <item>1.30</item>
+    </string-array>
+</resources>

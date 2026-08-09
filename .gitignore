@@ -1,0 +1,14 @@
+.gradle
+.idea
+build
+debug
+release
+local.properties
+*.iml
+*.jks
+*.keystore
+*.log
+*.py
+missing_symbols.txt
+
+

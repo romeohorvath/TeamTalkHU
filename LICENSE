@@ -1,0 +1,20 @@
+TeamTalkHU — License Information
+================================
+
+TeamTalkHU is a modified build of the TeamTalk 5 Android client.
+
+The Android client source code, the TeamTalk 5 SDK (including
+TeamTalk5.jar) and the native TeamTalk5 libraries are owned by
+BearWare.dk and are distributed under the proprietary "TeamTalk 5 SDK
+License Agreement". Use of the SDK requires a TeamTalk SDK License Key
+issued by BearWare.dk, and the SDK itself may not be redistributed or
+modified except as permitted by that agreement.
+
+Full license text:
+https://github.com/BearWare/TeamTalk5/blob/master/LICENSE.txt
+
+Modifications to the client (package rename, Hungarian translation,
+feature changes, branding) were made by Horvath Romeo.
+
+This project is a fork and is not affiliated with or endorsed by
+BearWare.dk.
