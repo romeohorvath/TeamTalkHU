@@ -7,7 +7,7 @@
 
 ## 📥 LETÖLTÉS
 
-[![TeamTalkHU APK letöltése](docs/letoltes-gomb.svg)](https://github.com/romeohorvath/TeamTalkHU/releases/latest/download/TeamTalk.apk)
+[![TeamTalkHU APK letöltése](docs/letoltes-gomb.svg)](https://github.com/romeohorvath/TeamTalkHU/releases/latest/download/TeamTalkHU-release.apk)
 
 > A legfrissebb, aláírt APK közvetlenül a legújabb release-ből érkezik. Telepítéshez engedélyezd az „ismeretlen forrásból származó alkalmazások" opciót a telefonodon.
 

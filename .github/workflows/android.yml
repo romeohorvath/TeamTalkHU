@@ -64,7 +64,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          mv build/outputs/apk/release/TeamTalk.apk build/outputs/apk/release/TeamTalkHU-release.apk
           gh release create "${GITHUB_REF_NAME}" \
-            build/outputs/apk/release/TeamTalk.apk \
+            build/outputs/apk/release/TeamTalkHU-release.apk \
             --title "TeamTalkHU ${GITHUB_REF_NAME}" \
             --generate-notes
